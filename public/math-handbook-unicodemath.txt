@@ -1,0 +1,759 @@
+﻿MATH HANDBOOK PRO — UNICODEMATH
+73 bài học · 30 bài hình học · THCS đến đại học cơ bản
+Công thức ở dạng UnicodeMath tuyến tính. Nội dung đại học là tuyển chọn nền tảng, không phải toàn bộ giáo trình.
+
+
+ĐẠI SỐ CƠ BẢN
+
+Bình phương của một tổng
+(a+b)² = a²+2ab+b²
+Điều kiện: a, b là số thực.
+Lý thuyết: Bình phương một tổng gồm hai bình phương và hai lần tích.
+Chứng minh: Nhân (a+b)(a+b), phân phối và nhóm hai số hạng ab.
+Ví dụ: 103² = (100+3)² = 10 000 + 600 + 9 = 10 609.
+Lỗi thường gặp: Không được bỏ 2ab.
+Tự luyện: Tính (10+3)².
+Đáp án: 100 + 60 + 9 = 169.
+
+Bình phương của một hiệu
+(a−b)² = a²−2ab+b²
+Điều kiện: a, b ∈ ℝ.
+Lý thuyết: Khai triển bình phương của hiệu.
+Chứng minh: Thay b bằng −b trong bình phương của tổng.
+Ví dụ: 98² = (100−2)² = 9 604.
+Lỗi thường gặp: Số hạng cuối là +b².
+Tự luyện: Tính (10−2)².
+Đáp án: 100−40+4 = 64.
+
+Hiệu hai bình phương
+a²−b² = (a−b)(a+b)
+Điều kiện: a, b ∈ ℝ.
+Lý thuyết: Chuyển hiệu thành tích để rút gọn hoặc nhẩm nhanh.
+Chứng minh: Khai triển vế phải, −ab và +ab triệt tiêu.
+Ví dụ: 51²−49² = 2 × 100 = 200.
+Lỗi thường gặp: a²+b² không bằng (a+b)(a−b).
+Tự luyện: Tính 21²−19².
+Đáp án: (21−19)(21+19)=2×40=80.
+
+Lập phương của tổng và hiệu
+(a±b)³ = a³±3a²b+3ab²±b³
+Điều kiện: a, b ∈ ℝ.
+Lý thuyết: Hệ số khai triển là 1, 3, 3, 1.
+Chứng minh: Nhân (a±b)² với (a±b) rồi thu gọn.
+Ví dụ: (x+2)³ = x³+6x²+12x+8.
+Lỗi thường gặp: Với hiệu, số hạng 3ab² vẫn dương.
+Tự luyện: Tính (2+3)³.
+Đáp án: 5³ = 125.
+
+Tổng và hiệu hai lập phương
+a³±b³ = (a±b)(a²∓ab+b²)
+Điều kiện: a, b ∈ ℝ.
+Lý thuyết: Phân tích tổng hoặc hiệu lập phương thành nhân tử.
+Chứng minh: Nhân hai thừa số; các số hạng hỗn hợp triệt tiêu.
+Ví dụ: 8x³−1 = (2x−1)(4x²+2x+1).
+Lỗi thường gặp: Dấu của ab ở thừa số thứ hai ngược dấu bên ngoài.
+Tự luyện: Tính 4³−3³.
+Đáp án: 64−27=37.
+
+Phân thức đại số
+A/B+C/D = (AD+BC)/(BD)
+Điều kiện: B ≠ 0, D ≠ 0; giữ mọi điều kiện ban đầu sau khi rút gọn.
+Lý thuyết: Phân thức là thương của hai đa thức, mẫu khác 0.
+Chứng minh: Quy đồng hai mẫu thành BD.
+Ví dụ: (x²−1)/(x−1)=x+1, nhưng vẫn phải x ≠ 1.
+Lỗi thường gặp: Không cộng trực tiếp hai mẫu số.
+Tự luyện: Tính 1/2 + 3/2.
+Đáp án: Cùng mẫu: (1+3)/2=2.
+
+Đa thức và định lý phần dư
+P(x) = (x−a)Q(x)+P(a)
+Điều kiện: P là đa thức; chia cho đa thức bậc nhất x−a.
+Lý thuyết: Phần dư khi chia P(x) cho x−a bằng P(a).
+Chứng minh: Theo phép chia đa thức, dư là hằng r; thay x=a suy ra r=P(a).
+Ví dụ: P(x)=x²+2x+3, chia cho x−1 có dư 6.
+Lỗi thường gặp: Không nhầm chia x+a với thế x=a.
+Tự luyện: Dư của x²+1 khi chia cho x−2?
+Đáp án: P(2)=4+1=5.
+
+Đồng nhất thức đa thức
+∑_(k=0)^n▒a_k x^k ≡ ∑_(k=0)^n▒b_k x^k ⇔ a_k=b_k
+Điều kiện: Đẳng thức đúng với mọi x thực.
+Lý thuyết: Hai đa thức bằng nhau đồng nhất khi mọi hệ số tương ứng bằng nhau.
+Chứng minh: Hiệu hai vế có vô số nghiệm nên là đa thức 0.
+Ví dụ: Ax+B ≡ 2x+3 cho A=2, B=3.
+Lỗi thường gặp: Đúng ở một giá trị x chưa đủ là đồng nhất thức.
+Tự luyện: Nếu Ax+4 ≡ 3x+4 thì A bằng bao nhiêu?
+Đáp án: So sánh hệ số x: A=3.
+
+Phương trình bậc nhất
+ax+b=0 ⇒ x=−b/a
+Điều kiện: a ≠ 0; nếu a=0 xét b=0 hoặc b≠0 riêng.
+Lý thuyết: Tìm giá trị của biến làm đẳng thức đúng.
+Chứng minh: Trừ b rồi chia cả hai vế cho a.
+Ví dụ: 3x−12=0 ⇒ x=4.
+Lỗi thường gặp: Chia cho a mà chưa xét a=0.
+Tự luyện: Giải 2x−10=0.
+Đáp án: 2x=10 ⇒ x=5.
+
+Phương trình bậc hai
+Δ=b²−4ac,  x=(−b±√Δ)/(2a)
+Điều kiện: a ≠ 0; nghiệm thực khi Δ ≥ 0.
+Lý thuyết: Δ>0: hai nghiệm; Δ=0: nghiệm kép; Δ<0: không có nghiệm thực.
+Chứng minh: Hoàn thành bình phương: (2ax+b)² = Δ.
+Ví dụ: x²−5x+6=0 có nghiệm 2 và 3.
+Lỗi thường gặp: Mẫu là toàn bộ 2a.
+Tự luyện: Nghiệm lớn hơn của x²−5x+6=0?
+Đáp án: Δ=1; x=(5±1)/2; nghiệm lớn là 3.
+
+Hệ phương trình tuyến tính
+D=a₁b₂−a₂b₁,  x=(c₁b₂−c₂b₁)/D
+Điều kiện: Hệ a₁x+b₁y=c₁, a₂x+b₂y=c₂; công thức khi D≠0.
+Lý thuyết: D≠0 cho nghiệm duy nhất; D=0 phải xét tương thích.
+Chứng minh: Nhân phương trình đầu với b₂, phương trình sau với b₁ rồi trừ để khử y.
+Ví dụ: x+y=5, x−y=1 ⇒ x=3, y=2.
+Lỗi thường gặp: D=0 không tự động có nghĩa vô nghiệm.
+Tự luyện: Với x+y=7, x−y=1, tìm x.
+Đáp án: Cộng hai phương trình: 2x=8 ⇒ x=4.
+
+Giá trị tuyệt đối
+|x| = {█(x&x≥0@−x&x<0)┤
+Điều kiện: x ∈ ℝ.
+Lý thuyết: Khoảng cách từ điểm x đến 0 trên trục số.
+Chứng minh: Khoảng cách luôn không âm; xét hai phía của 0.
+Ví dụ: |−7|=7; |x|=3 ⇒ x=±3.
+Lỗi thường gặp: |x|=a với a<0 vô nghiệm.
+Tự luyện: Tính |−8|.
+Đáp án: −8<0 nên |−8|=−(−8)=8.
+
+Hàm số bậc nhất
+f(x)=ax+b
+Điều kiện: x ∈ ℝ; a≠0 nếu gọi là hàm số bậc nhất.
+Lý thuyết: Mỗi x có đúng một giá trị y; a là hệ số góc.
+Chứng minh: f(x+h)−f(x)=ah, nên tỉ lệ thay đổi bằng a.
+Ví dụ: f(x)=2x+1 cho f(3)=7.
+Lỗi thường gặp: Phân biệt f(x) với f·x.
+Tự luyện: Với f(x)=3x−2, tính f(4).
+Đáp án: 3×4−2=10.
+
+LŨY THỪA & CĂN THỨC
+
+Quy tắc lũy thừa
+a^m a^n = a^(m+n),  (a^m)^n = a^(mn)
+Điều kiện: Trong bài này a>0, m,n∈ℝ; có thể mở rộng riêng cho số mũ nguyên.
+Lý thuyết: Lũy thừa nguyên dương là phép nhân lặp; mở rộng bằng tính liên tục.
+Chứng minh: Với số mũ nguyên, đếm số thừa số a; với số mũ thực, dùng aᵗ=exp(t ln a).
+Ví dụ: 2³×2⁴=2⁷=128.
+Lỗi thường gặp: Không áp dụng aᵐ+aⁿ=aᵐ⁺ⁿ.
+Tự luyện: Tính 2³ × 2².
+Đáp án: 2⁵=32.
+
+Căn bậc hai
+√(a²)=|a|,  √(ab)=√a √b
+Điều kiện: a,b≥0 ở quy tắc tích; √(a²)=|a| với mọi a thực.
+Lý thuyết: √a là số không âm có bình phương bằng a.
+Chứng minh: Hai vế quy tắc tích không âm và bình phương đều bằng ab.
+Ví dụ: √((-3)²)=3, không phải −3.
+Lỗi thường gặp: √(a+b) không bằng √a+√b.
+Tự luyện: Tính √81.
+Đáp án: 9≥0 và 9²=81.
+
+Căn bậc ba
+∛(a³)=a
+Điều kiện: a ∈ ℝ.
+Lý thuyết: Căn bậc lẻ giữ dấu của số dưới căn.
+Chứng minh: Hàm x³ đồng biến trên ℝ, nên có hàm ngược duy nhất.
+Ví dụ: ∛(−125)=−5.
+Lỗi thường gặp: Không thêm giá trị tuyệt đối cho căn bậc lẻ.
+Tự luyện: Tính ∛(−27).
+Đáp án: (−3)³=−27.
+
+Căn bậc n
+√(n&a)=a^(1/n)
+Điều kiện: n nguyên ≥2; ở công thức lũy thừa thực dùng a≥0. Với n lẻ, căn còn xác định cho a<0.
+Lý thuyết: Căn bậc chẵn lấy nghiệm không âm; căn bậc lẻ có thể âm.
+Chứng minh: Định nghĩa nghiệm x của xⁿ=a với quy ước dấu tương ứng.
+Ví dụ: ⁴√16=2.
+Lỗi thường gặp: ⁴√16 không bằng ±2; phương trình x⁴=16 mới có hai nghiệm thực.
+Tự luyện: Tính ⁴√81.
+Đáp án: 3⁴=81, lấy giá trị không âm.
+
+Biến đổi căn thức
+1/(√a+√b)=(√a−√b)/(a−b)
+Điều kiện: a,b≥0, a≠b trong công thức này.
+Lý thuyết: Nhân với biểu thức liên hợp để khử căn ở mẫu.
+Chứng minh: (√a+√b)(√a−√b)=a−b.
+Ví dụ: 1/(√3+√2)=√3−√2.
+Lỗi thường gặp: Khi a=b công thức bên phải không xác định.
+Tự luyện: Tính √12 × √3.
+Đáp án: √36=6.
+
+BẤT ĐẲNG THỨC
+
+AM–GM
+(a₁+⋯+a_n)/n ≥ √(n&a₁⋯a_n)
+Điều kiện: aᵢ≥0, n nguyên dương.
+Lý thuyết: Trung bình cộng không nhỏ hơn trung bình nhân.
+Chứng minh: Với hai số: (√a−√b)²≥0 ⇒ a+b≥2√ab. Bản n số suy ra bằng quy nạp hoặc tính lõm của ln (và giới hạn khi có số 0).
+Ví dụ: a=1,b=9 ⇒ a+b=10≥6.
+Lỗi thường gặp: Không áp dụng AM–GM cho các số âm.
+Tự luyện: Giá trị nhỏ nhất của x+4/x với x>0?
+Đáp án: AM–GM cho x+4/x≥2√4=4; bằng khi x=2.
+
+Cauchy–Schwarz
+(∑_i▒a_i b_i)² ≤ (∑_i▒(a_i)^2)(∑_i▒(b_i)^2)
+Điều kiện: Hai dãy hữu hạn số thực cùng độ dài.
+Lý thuyết: Độ lớn tích vô hướng không vượt tích độ dài.
+Chứng minh: Dùng ∑(taᵢ−bᵢ)²≥0 với mọi t; biệt thức của tam thức theo t không dương, xét riêng dãy a=0.
+Ví dụ: (1×3+2×4)²=121≤5×25=125.
+Lỗi thường gặp: Bình phương toàn bộ tổng tích, không chỉ từng số hạng.
+Tự luyện: Cận trên của (a+b)² nếu a²+b²=10?
+Đáp án: (a+b)²≤(1²+1²)(a²+b²)=20.
+
+Jensen
+f(∑_i▒w_i x_i) ≤ ∑_i▒w_i f(x_i)
+Điều kiện: f lồi trên khoảng chứa mọi xᵢ; wᵢ≥0; ∑wᵢ=1.
+Lý thuyết: Giá trị hàm tại trung bình không vượt trung bình giá trị hàm lồi.
+Chứng minh: Trường hợp hai điểm là định nghĩa lồi; quy nạp theo số trọng số dương.
+Ví dụ: f(x)=x²: ((1+3)/2)²=4≤(1+9)/2=5.
+Lỗi thường gặp: Với hàm lõm, đảo chiều bất đẳng thức.
+Tự luyện: Với x+y=6, min của x²+y²?
+Đáp án: Jensen cho x²: (x²+y²)/2≥3² ⇒ tổng≥18.
+
+Hölder
+∑_i▒|a_i b_i| ≤ (∑_i▒|a_i|^p)^(1/p)(∑_i▒|b_i|^q)^(1/q)
+Điều kiện: p,q>1; 1/p+1/q=1; dãy hữu hạn.
+Lý thuyết: Khái quát Cauchy–Schwarz cho hai số mũ liên hợp.
+Chứng minh: Chuẩn hóa hai dãy có chuẩn 1 rồi cộng Young uv≤uᵖ/p+vᑫ/q. Dãy 0 được xét riêng.
+Ví dụ: p=q=2 khôi phục bất đẳng thức Cauchy–Schwarz cho giá trị tuyệt đối.
+Lỗi thường gặp: p và q không tùy ý độc lập.
+Tự luyện: Khi p=3, q=3/2. Tính 2q.
+Đáp án: 1/q=1−1/3=2/3 ⇒ q=3/2 ⇒ 2q=3.
+
+Minkowski
+(∑_i▒|a_i+b_i|^p)^(1/p) ≤ (∑_i▒|a_i|^p)^(1/p)+(∑_i▒|b_i|^p)^(1/p)
+Điều kiện: Dãy hữu hạn số thực, p≥1.
+Lý thuyết: Bất đẳng thức tam giác của chuẩn p.
+Chứng minh: Với p>1, chặn ∑|a+b|ᵖ bằng ∑|a||a+b|ᵖ⁻¹+∑|b||a+b|ᵖ⁻¹ rồi áp dụng Hölder. Với p=1 cộng bất đẳng thức tam giác.
+Ví dụ: ||(3,0)+(0,4)||₂=5≤3+4=7.
+Lỗi thường gặp: Không áp dụng chiều này cho 0<p<1.
+Tự luyện: Độ dài vector (3,4) bằng bao nhiêu?
+Đáp án: √(3²+4²)=5.
+
+Chebyshev
+(∑_i▒a_i b_i)/n ≥ ((∑_i▒a_i)/n)((∑_i▒b_i)/n)
+Điều kiện: Hai dãy số thực cùng được sắp không giảm hoặc cùng không tăng.
+Lý thuyết: Hai dãy cùng chiều tạo trung bình tích lớn hơn tích trung bình.
+Chứng minh: n∑aᵢbᵢ−(∑aᵢ)(∑bᵢ)=∑ᵢ<ⱼ(aᵢ−aⱼ)(bᵢ−bⱼ)≥0.
+Ví dụ: (1×3+2×4)/2=5.5≥1.5×3.5=5.25.
+Lỗi thường gặp: Hai dãy ngược chiều thì chiều bất đẳng thức đảo lại.
+Tự luyện: Tính 1×3+2×4.
+Đáp án: 3+8=11.
+
+Schur bậc ba
+a³+b³+c³+3abc ≥ ab(a+b)+bc(b+c)+ca(c+a)
+Điều kiện: a,b,c≥0.
+Lý thuyết: Liên hệ các biểu thức đối xứng bậc ba.
+Chứng minh: Giả sử a≥b≥c. Tổng ∑a(a−b)(a−c) bằng (a−b)²(a+b−c)+c(c−a)(c−b)≥0.
+Ví dụ: a=b=c=1: hai vế cùng bằng 6.
+Lỗi thường gặp: Không bỏ điều kiện không âm.
+Tự luyện: Với a=b=c=2, tính a³+b³+c³+3abc.
+Đáp án: 3×8+3×8=48.
+
+Bernoulli
+(1+x)^n ≥ 1+nx
+Điều kiện: x≥−1; n nguyên dương.
+Lý thuyết: Chặn một lũy thừa bằng biểu thức tuyến tính.
+Chứng minh: Quy nạp: nhân giả thiết với 1+x≥0, xuất hiện nx²≥0.
+Ví dụ: 1.1³=1.331≥1+3×0.1=1.3.
+Lỗi thường gặp: Không giữ cùng phát biểu cho số mũ bất kỳ.
+Tự luyện: Cận dưới 1+nx khi n=5 và x=1?
+Đáp án: 1+5×1=6.
+
+Nesbitt
+a/(b+c)+b/(c+a)+c/(a+b) ≥ 3/2
+Điều kiện: a,b,c>0.
+Lý thuyết: Một bất đẳng thức phân thức đối xứng cơ bản.
+Chứng minh: Dạng Engel của Cauchy: ∑a/(s−a)=∑a²/[a(s−a)]≥s²/[2(ab+bc+ca)]≥3/2, vì a²+b²+c²≥ab+bc+ca.
+Ví dụ: a=b=c=1 ⇒ tổng=3/2.
+Lỗi thường gặp: Mẫu là tổng hai biến còn lại.
+Tự luyện: Hai lần cận dưới Nesbitt bằng bao nhiêu?
+Đáp án: 2×(3/2)=3.
+
+CẤP SỐ
+
+Cấp số cộng: số hạng và tổng
+u_n=u₁+(n−1)d,  S_n=n(2u₁+(n−1)d)/2
+Điều kiện: n nguyên ≥1; d là công sai cố định.
+Lý thuyết: Mỗi số hạng tăng thêm d so với số trước.
+Chứng minh: Cộng truy hồi để có uₙ; ghép số đầu và cuối trong tổng để suy ra 2Sₙ=n(u₁+uₙ).
+Ví dụ: u₁=2,d=3,n=5 ⇒ u₅=14, S₅=40.
+Lỗi thường gặp: uₙ dùng (n−1)d, không phải nd.
+Tự luyện: Tổng 1+2+…+10?
+Đáp án: S₁₀=10(1+10)/2=55.
+
+Cấp số nhân: số hạng và tổng
+u_n=u₁q^(n−1),  S_n=u₁(1−q^n)/(1−q)
+Điều kiện: n nguyên ≥1; công thức tổng khi q≠1. Với q=1, Sₙ=nu₁.
+Lý thuyết: Mỗi số hạng bằng số trước nhân với q.
+Chứng minh: Lấy Sₙ−qSₙ, các số hạng giữa triệt tiêu, còn u₁−u₁qⁿ.
+Ví dụ: u₁=3,q=2,n=4 ⇒ S₄=3+6+12+24=45.
+Lỗi thường gặp: Không dùng mẫu 1−q khi q=1.
+Tự luyện: Tổng 1+2+4+8?
+Đáp án: S₄=(1−2⁴)/(1−2)=15.
+
+Tổng cấp số nhân vô hạn
+S_∞=u₁/(1−q)
+Điều kiện: |q|<1. Nếu u₁=0 thì tổng 0 với mọi q.
+Lý thuyết: Khi |q|<1, các số hạng nhỏ dần và tổng hội tụ.
+Chứng minh: Cho n→∞ trong tổng hữu hạn; qⁿ→0.
+Ví dụ: 1+1/2+1/4+…=2.
+Lỗi thường gặp: q<1 chưa đủ: q=−2 không hội tụ nếu u₁≠0.
+Tự luyện: Tổng 3+1.5+0.75+…?
+Đáp án: 3/(1−0.5)=6.
+
+LOGARIT
+
+Định nghĩa logarit
+log_a b=c ⇔ a^c=b
+Điều kiện: a>0, a≠1, b>0.
+Lý thuyết: Logarit trả lời: phải nâng cơ số lên mũ mấy để được b?
+Chứng minh: Hàm aˣ liên tục và đơn điệu từ ℝ lên (0,∞), nên có hàm ngược.
+Ví dụ: log₂8=3 vì 2³=8.
+Lỗi thường gặp: Không lấy log của số không dương trong ℝ.
+Tự luyện: Tính log₂32.
+Đáp án: 2⁵=32.
+
+Quy tắc và đổi cơ số
+log_a(xy)=log_a x+log_a y,  log_a b=(ln b)/(ln a)
+Điều kiện: a>0,a≠1; x,y,b>0.
+Lý thuyết: Phép nhân biến thành phép cộng, đổi cơ số giúp tính toán.
+Chứng minh: Đặt x=aᵘ,y=aᵛ thì xy=aᵘ⁺ᵛ; lấy ln(aᶜ)=ln b để đổi cơ số.
+Ví dụ: log₂(8×4)=3+2=5.
+Lỗi thường gặp: log(x+y) không bằng log x+log y.
+Tự luyện: Tính log₂8 + log₂4.
+Đáp án: 3+2=5.
+
+Log thập phân và log tự nhiên
+lg x=log_10 x,  ln x=log_e x
+Điều kiện: x>0; e≈2.71828.
+Lý thuyết: lg dùng cơ số 10; ln dùng cơ số e.
+Chứng minh: Đây là hai trường hợp đặc biệt của định nghĩa logarit.
+Ví dụ: lg1000=3; ln(e²)=2.
+Lỗi thường gặp: Phím log và ln trên máy tính khác cơ số.
+Tự luyện: Tính lg10000.
+Đáp án: 10⁴=10000.
+
+SỐ PHỨC & EULER
+
+Số phức dạng đại số
+z=a+bi,  i²=−1
+Điều kiện: a,b∈ℝ.
+Lý thuyết: a là phần thực, b là phần ảo; biểu diễn bằng điểm (a,b).
+Chứng minh: Phép nhân tuân quy tắc phân phối và thay i² bằng −1.
+Ví dụ: (1+2i)+(3−i)=4+i.
+Lỗi thường gặp: Phần ảo của 3+2i là 2, không phải 2i.
+Tự luyện: Phần thực của (1+2i)+(3−i)?
+Đáp án: 1+3=4.
+
+Mô đun và liên hợp
+|z|=√(a²+b²),  z̄=a−bi,  zz̄=|z|²
+Điều kiện: z=a+bi; mô đun luôn không âm.
+Lý thuyết: Mô đun là khoảng cách đến gốc; liên hợp đối xứng qua trục thực.
+Chứng minh: (a+bi)(a−bi)=a²+b²; dùng Pythagoras cho khoảng cách.
+Ví dụ: z=3+4i ⇒ |z|=5, z̄=3−4i.
+Lỗi thường gặp: |a+bi| không bằng |a|+|b|.
+Tự luyện: Tính |6+8i|.
+Đáp án: √(36+64)=10.
+
+Argument và dạng lượng giác
+z=r(cos θ+i sin θ),  r=|z|
+Điều kiện: z≠0; θ=arg z xác định sai khác 2kπ.
+Lý thuyết: θ là góc định hướng từ trục thực dương đến vector z.
+Chứng minh: a=r cosθ và b=r sinθ theo tọa độ cực.
+Ví dụ: 1+i có r=√2 và θ=π/4 modulo 2π.
+Lỗi thường gặp: Không dùng arctan(b/a) mà bỏ góc phần tư; z=0 không có argument.
+Tự luyện: Argument chính của i, tính bằng độ?
+Đáp án: i nằm trên trục ảo dương, góc 90°.
+
+De Moivre
+[r(cos θ+i sin θ)]^n=r^n(cos(nθ)+i sin(nθ))
+Điều kiện: n∈ℤ; khi n<0 cần r>0.
+Lý thuyết: Nhân số phức tương ứng nhân mô đun và cộng góc.
+Chứng minh: Nhân hai dạng lượng giác bằng công thức cộng góc, rồi quy nạp.
+Ví dụ: (cos30°+i sin30°)³=i.
+Lỗi thường gặp: Không nhân mô đun với n; phải nâng lên rⁿ.
+Tự luyện: Phần thực của (1+i)²?
+Đáp án: (1+i)²=1+2i−1=2i.
+
+Công thức Euler
+e^(iθ)=cos θ+i sin θ
+Điều kiện: θ∈ℝ, dùng radian trong giải tích.
+Lý thuyết: Hàm mũ phức mô tả điểm chuyển động trên đường tròn đơn vị.
+Chứng minh: Tách chuỗi Taylor eⁱᶿ thành phần chẵn và lẻ, nhận được chuỗi cosθ và i sinθ.
+Ví dụ: θ=π ⇒ e^(iπ)=−1, nên e^(iπ)+1=0.
+Lỗi thường gặp: Phân biệt độ và radian.
+Tự luyện: Phần thực của e^(iπ)?
+Đáp án: cosπ=−1.
+
+GIẢI TÍCH
+
+Giới hạn cơ bản
+lim_(x→0)▒(sin x)/x=1
+Điều kiện: x tính bằng radian; x≠0 trong biểu thức.
+Lý thuyết: Giới hạn mô tả giá trị tiến gần, không nhất thiết là giá trị tại điểm.
+Chứng minh: Với 0<x<π/2: cos x≤sin x/x≤1; dùng định lý kẹp và tính chẵn của thương.
+Ví dụ: limₓ→₀ sin(3x)/x=3.
+Lỗi thường gặp: Không thay x=0 rồi kết luận 0/0 là 0.
+Tự luyện: Giá trị limₓ→₀ sin(2x)/x?
+Đáp án: 2 × lim sin(2x)/(2x)=2.
+
+Định nghĩa và quy tắc đạo hàm
+f′(x)=lim_(h→0)▒(f(x+h)−f(x))/h,  (x^n)′=nx^(n−1)
+Điều kiện: Giới hạn hữu hạn phải tồn tại. Quy tắc lũy thừa ở đây n nguyên ≥1.
+Lý thuyết: Đạo hàm là tốc độ thay đổi tức thời và hệ số góc tiếp tuyến.
+Chứng minh: Khai triển (x+h)ⁿ; sau khi chia h, mọi số hạng còn h tiến về 0.
+Ví dụ: (x³)′=3x²; tại x=2 đạo hàm là 12.
+Lỗi thường gặp: Đạo hàm hằng số bằng 0.
+Tự luyện: Đạo hàm x² tại x=3?
+Đáp án: f′(x)=2x ⇒ f′(3)=6.
+
+Đạo hàm tích, thương, hàm hợp
+(uv)′=u′v+uv′,  (f∘g)′=(f′∘g)g′
+Điều kiện: Các hàm khả vi tại điểm xét. Với thương cần v≠0: (u/v)′=(u′v−uv′)/v².
+Lý thuyết: Tách cấu trúc biểu thức để chọn quy tắc phù hợp.
+Chứng minh: Quy tắc tích từ định nghĩa: thêm bớt u(x+h)v(x), chia h và lấy giới hạn.
+Ví dụ: (sin(x²))′=2x cos(x²).
+Lỗi thường gặp: Không bỏ đạo hàm bên trong ở hàm hợp.
+Tự luyện: Đạo hàm (2x+1)² tại x=0?
+Đáp án: 2(2x+1)×2; tại 0 là 4.
+
+Nguyên hàm
+∫▒x^n dx=x^(n+1)/(n+1)+C
+Điều kiện: n≠−1; với n thực, xét x>0. Riêng ∫1/x dx=ln|x|+C trên khoảng không chứa 0.
+Lý thuyết: Nguyên hàm F của f thỏa F′=f; các nguyên hàm sai khác hằng số trên một khoảng.
+Chứng minh: Lấy đạo hàm xⁿ⁺¹/(n+1)+C thu được xⁿ.
+Ví dụ: ∫2x dx=x²+C.
+Lỗi thường gặp: Phải thêm hằng số C cho tích phân bất định.
+Tự luyện: Với F(x)=x² và F′=2x, tính F(3).
+Đáp án: F(3)=3²=9.
+
+Tích phân xác định
+∫_a^b▒f(x) dx=F(b)−F(a)
+Điều kiện: f liên tục trên [a,b] và F′=f.
+Lý thuyết: Tích phân là diện tích có dấu, liên hệ với nguyên hàm bởi định lý cơ bản.
+Chứng minh: Hàm G(x)=∫ₐˣf(t)dt có G′=f, nên F−G hằng; thế hai đầu mút.
+Ví dụ: ∫₀²x dx=[x²/2]₀²=2.
+Lỗi thường gặp: Diện tích hình học cần tách dấu hoặc tích phân |f|.
+Tự luyện: Tính ∫₀² 3x² dx.
+Đáp án: [x³]₀²=8.
+
+HÌNH HỌC THCS
+
+Góc và tổng góc tam giác
+A+B+C=180°
+Điều kiện: A, B, C là ba góc trong một tam giác phẳng Euclid.
+Lý thuyết: Ba góc trong tạo thành một góc bẹt. Góc ngoài bằng tổng hai góc trong không kề.
+Chứng minh: Qua một đỉnh kẻ đường thẳng song song cạnh đối diện, dùng góc so le trong.
+Ví dụ: A=50°, B=60° ⇒ C=70°.
+Lỗi thường gặp: Không cộng thêm góc ngoài vào tổng ba góc trong.
+Tự luyện: Tam giác có hai góc 40° và 65°. Góc còn lại bao nhiêu độ?
+Đáp án: 180−40−65=75°.
+
+Định lý Pythagoras
+a²+b²=c²
+Điều kiện: Tam giác vuông; a, b là hai cạnh góc vuông, c là cạnh huyền.
+Lý thuyết: Bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông. Đảo lại, ba cạnh dương thỏa hệ thức tạo tam giác vuông.
+Chứng minh: Ghép bốn tam giác vuông vào hình vuông cạnh a+b: (a+b)²=4ab/2+c².
+Ví dụ: Hai cạnh góc vuông 3 cm, 4 cm ⇒ cạnh huyền 5 cm.
+Lỗi thường gặp: Cạnh huyền đối diện góc vuông và dài nhất.
+Tự luyện: Hai cạnh góc vuông 5 và 12. Tính cạnh huyền.
+Đáp án: c=√(25+144)=13.
+
+Diện tích tam giác
+S=ah/2
+Điều kiện: a là một cạnh; h là khoảng cách vuông góc từ đỉnh đối diện đến đường thẳng chứa cạnh đó.
+Lý thuyết: Diện tích phụ thuộc đáy và chiều cao tương ứng, kể cả khi chân đường cao ở ngoài tam giác.
+Chứng minh: Ghép hai tam giác bằng nhau thành hình bình hành có diện tích ah.
+Ví dụ: a=8 cm, h=5 cm ⇒ S=20 cm².
+Lỗi thường gặp: Không lấy cạnh xiên thay cho chiều cao.
+Tự luyện: Tam giác có đáy 12, chiều cao 7. Tính diện tích.
+Đáp án: S=12×7/2=42.
+
+Tam giác đồng dạng và tỉ số diện tích
+a′/a=b′/b=c′/c=k,  S′/S=k²
+Điều kiện: Hai tam giác đồng dạng, các cạnh được ghép đúng tương ứng, k>0.
+Lý thuyết: Độ dài tăng k lần thì diện tích tăng k² lần. Nhận biết đồng dạng bằng góc–góc, cạnh–cạnh–cạnh hoặc cạnh–góc–cạnh tương ứng.
+Chứng minh: Đáy và chiều cao cùng nhân k; thay vào S=ah/2.
+Ví dụ: Tỉ số cạnh 3 ⇒ tỉ số diện tích 9.
+Lỗi thường gặp: Tỉ số diện tích không bằng tỉ số cạnh.
+Tự luyện: Một tam giác phóng lớn các cạnh gấp 4. Diện tích gấp mấy lần?
+Đáp án: 4²=16 lần.
+
+Định lý Thales
+AD/AB=AE/AC=DE/BC
+Điều kiện: D∈AB, E∈AC, DE∥BC trong tam giác ABC; xét các đoạn thẳng dương.
+Lý thuyết: Một đường song song với một cạnh cắt hai cạnh còn lại theo cùng tỉ số.
+Chứng minh: Tam giác ADE và ABC đồng dạng theo hai góc.
+Ví dụ: AD/AB=1/2, BC=10 ⇒ DE=5.
+Lỗi thường gặp: Phải có giả thiết song song; không trộn AD/DB với AE/AC.
+Tự luyện: DE∥BC, AD/AB=2/3 và BC=12. Tính DE.
+Đáp án: DE=(2/3)×12=8.
+
+Diện tích tứ giác quen thuộc
+S_(chữ nhật)=ab,  S_(bình hành)=ah,  S_(hình thang)=(a+b)h/2
+Điều kiện: a,b là cạnh kề ở hình chữ nhật hoặc hai đáy song song ở hình thang; h là chiều cao tương ứng.
+Lý thuyết: Hình thoi còn có S=d₁d₂/2, với d₁,d₂ là hai đường chéo.
+Chứng minh: Cắt ghép hình bình hành thành chữ nhật; ghép hai hình thang bằng nhau thành hình bình hành.
+Ví dụ: Hình thang đáy 6 và 10, cao 4 ⇒ S=32.
+Lỗi thường gặp: Hai đáy hình thang phải song song; h vuông góc hai đáy.
+Tự luyện: Hình thang đáy 8 và 14, cao 5. Tính diện tích.
+Đáp án: S=(8+14)×5/2=55.
+
+Chu vi và diện tích hình tròn
+C=2πr,  S=πr²
+Điều kiện: r>0 là bán kính; đường kính d=2r.
+Lý thuyết: Chu vi tăng tuyến tính theo r, diện tích tăng theo r².
+Chứng minh: C/d=π theo định nghĩa π; chia hình tròn thành nhiều quạt nhỏ, ghép gần hình chữ nhật đáy πr, cao r rồi lấy giới hạn.
+Ví dụ: r=3 ⇒ C=6π, S=9π.
+Lỗi thường gặp: Không thay đường kính vào vị trí bán kính.
+Tự luyện: Hình tròn bán kính 5 có S=kπ. Tìm k.
+Đáp án: S=π×5²=25π.
+
+Góc nội tiếp và tiếp tuyến
+∠APB=(số đo cung AB không chứa P)/2
+Điều kiện: A,B,P trên một đường tròn, P khác A,B.
+Lý thuyết: Góc nội tiếp bằng nửa số đo cung bị chắn. Tiếp tuyến tại T vuông góc bán kính OT.
+Chứng minh: Nối tâm với các đỉnh; các tam giác cân tạo quan hệ góc tâm bằng hai lần góc nội tiếp chắn cùng cung.
+Ví dụ: Cung AB không chứa P có số đo 100° ⇒ ∠APB=50°.
+Lỗi thường gặp: Phải chọn cung không chứa đỉnh góc nội tiếp.
+Tự luyện: Góc nội tiếp chắn nửa đường tròn bằng bao nhiêu độ?
+Đáp án: Nửa đường tròn 180°; góc nội tiếp bằng 180/2=90°.
+
+Tỉ số lượng giác trong tam giác vuông
+sin α=a/c,  cos α=b/c,  tan α=a/b
+Điều kiện: 0°<α<90°; a đối diện α, b kề α, c là cạnh huyền.
+Lý thuyết: Các tỉ số không đổi với những tam giác vuông có cùng góc nhọn vì chúng đồng dạng.
+Chứng minh: Dùng đồng dạng để chứng minh tỉ số chỉ phụ thuộc góc α.
+Ví dụ: Tam giác 3–4–5, cạnh đối α là 3 ⇒ sin α=3/5.
+Lỗi thường gặp: Cạnh kề ở công thức cos không phải cạnh huyền.
+Tự luyện: Cạnh đối α là 6, cạnh huyền 10. Tính 10 sin α.
+Đáp án: 10×(6/10)=6.
+
+Hộp chữ nhật, trụ, nón và cầu
+V_(hộp)=abc,  V_(trụ)=πr²h,  V_(nón)=πr²h/3,  V_(cầu)=4πr³/3
+Điều kiện: Kích thước dương; h là chiều cao vuông góc đáy.
+Lý thuyết: Thể tích đo phần không gian bên trong. Diện tích mặt cầu là 4πr².
+Chứng minh: Hộp đếm các khối đơn vị; trụ từ diện tích đáy nhân cao; nón và cầu có thể chứng minh bằng phương pháp cắt lớp ở giải tích.
+Ví dụ: Hộp 2×3×4 có V=24; trụ r=2,h=3 có V=12π.
+Lỗi thường gặp: Không nhầm diện tích (đơn vị vuông) với thể tích (đơn vị khối).
+Tự luyện: Khối hộp có ba kích thước 3, 4, 5. Tính thể tích.
+Đáp án: V=3×4×5=60.
+
+HÌNH HỌC THPT
+
+Định lý cosin
+a²=b²+c²−2bc cos A
+Điều kiện: a,b,c là ba cạnh tam giác, A đối diện a.
+Lý thuyết: Mở rộng Pythagoras cho tam giác bất kỳ; khi A=90°, cos A=0.
+Chứng minh: Dùng tích vô hướng của hai vector cạnh xuất phát từ đỉnh A để khai triển bình phương hiệu.
+Ví dụ: b=c=2, A=60° ⇒ a²=4.
+Lỗi thường gặp: Góc giữa hai cạnh b,c phải là A.
+Tự luyện: b=3,c=4,A=90°. Tính a.
+Đáp án: a²=9+16−0=25 ⇒ a=5.
+
+Định lý sin
+a/(sin A)=b/(sin B)=c/(sin C)=2R
+Điều kiện: Tam giác không suy biến, R là bán kính đường tròn ngoại tiếp.
+Lý thuyết: Tỉ số cạnh với sin góc đối diện bằng đường kính đường tròn ngoại tiếp.
+Chứng minh: Dây cung a chắn góc nội tiếp A; dùng tam giác vuông dựng qua đường kính suy ra a=2R sin A.
+Ví dụ: a=6,A=30° ⇒ R=6.
+Lỗi thường gặp: Không dùng góc kề cạnh; dữ kiện cạnh–cạnh–góc có thể cho hai tam giác.
+Tự luyện: a=8, A=90°. Tính R.
+Đáp án: R=8/(2×1)=4.
+
+Công thức Heron
+p=(a+b+c)/2,  S=√(p(p−a)(p−b)(p−c))
+Điều kiện: a,b,c>0 và thỏa bất đẳng thức tam giác nghiêm ngặt.
+Lý thuyết: Tính diện tích khi biết ba cạnh; p là nửa chu vi.
+Chứng minh: Từ S=bc sin A/2 và định lý cosin, bình phương rồi phân tích thành bốn thừa số.
+Ví dụ: Tam giác cạnh 3,4,5 có p=6, S=√(6×3×2×1)=6.
+Lỗi thường gặp: p là nửa chu vi, không phải chu vi.
+Tự luyện: Tam giác cạnh 5,5,6 có diện tích bao nhiêu?
+Đáp án: p=8 ⇒ S=√(8×3×3×2)=12.
+
+Tích vô hướng và góc giữa vector
+u·v=u₁v₁+u₂v₂+u₃v₃=‖u‖‖v‖cos θ
+Điều kiện: u,v∈ℝ³; công thức tính góc yêu cầu cả hai khác vector 0.
+Lý thuyết: Hai vector khác 0 vuông góc khi tích vô hướng bằng 0.
+Chứng minh: Khai triển ‖u−v‖² theo tọa độ rồi so với định lý cosin.
+Ví dụ: (1,2,0)·(3,−1,4)=1.
+Lỗi thường gặp: Không chia cho độ dài vector 0.
+Tự luyện: Tính (1,2,3)·(4,0,−1).
+Đáp án: 1×4+2×0+3×(−1)=1.
+
+Khoảng cách và trung điểm
+AB=√((x₂−x₁)²+(y₂−y₁)²),  M=((x₁+x₂)/2,(y₁+y₂)/2)
+Điều kiện: A(x₁,y₁), B(x₂,y₂) trong hệ tọa độ trực chuẩn.
+Lý thuyết: Hiệu tọa độ tạo hai cạnh vuông; trung điểm lấy trung bình từng tọa độ.
+Chứng minh: Áp dụng Pythagoras cho độ dài; AM=MB và M nằm trên AB theo phép chia đôi vector.
+Ví dụ: A(1,2), B(4,6) ⇒ AB=5, M(2.5,4).
+Lỗi thường gặp: Không cộng tọa độ khi tính vector AB.
+Tự luyện: A(0,0), B(6,8). Tính AB.
+Đáp án: AB=√(36+64)=10.
+
+Đường thẳng và khoảng cách điểm–đường
+d(M,Δ)=|ax₀+by₀+c|/√(a²+b²)
+Điều kiện: Δ: ax+by+c=0, (a,b)≠(0,0); M(x₀,y₀).
+Lý thuyết: Vector (a,b) là pháp tuyến; khoảng cách là độ dài hình chiếu lên pháp tuyến đơn vị.
+Chứng minh: Chọn H∈Δ và chiếu HM lên (a,b)/√(a²+b²).
+Ví dụ: M(0,0), Δ:3x+4y−10=0 ⇒ d=2.
+Lỗi thường gặp: Tử số phải có trị tuyệt đối.
+Tự luyện: Khoảng cách từ O đến 3x+4y−15=0?
+Đáp án: d=15/5=3.
+
+Phương trình đường tròn
+(x−a)²+(y−b)²=R²
+Điều kiện: Tâm I(a,b), R>0; tọa độ trực chuẩn.
+Lý thuyết: Tập hợp điểm cách tâm I một khoảng R.
+Chứng minh: Bình phương công thức khoảng cách IM=R.
+Ví dụ: (x−2)²+(y+1)²=9 có tâm (2,−1), bán kính 3.
+Lỗi thường gặp: Tọa độ tâm đổi dấu so với hằng số trong ngoặc.
+Tự luyện: Đường tròn x²+y²=49 có bán kính bao nhiêu?
+Đáp án: R²=49, R>0 ⇒ R=7.
+
+Elip, hyperbol và parabol
+x²/a²+y²/b²=1;  x²/a²−y²/b²=1;  y²=2px
+Điều kiện: Elip: a>b>0; hyperbol: a,b>0; parabol theo quy ước p>0.
+Lý thuyết: Elip có c²=a²−b²; hyperbol có c²=a²+b². Parabol y²=2px có tiêu điểm (p/2,0), đường chuẩn x=−p/2.
+Chứng minh: Xuất phát từ tổng hoặc hiệu khoảng cách đến hai tiêu điểm; parabol từ khoảng cách đến tiêu điểm bằng khoảng cách đến đường chuẩn.
+Ví dụ: Elip x²/25+y²/9=1 có c=4.
+Lỗi thường gặp: Không trộn quy ước y²=2px với y²=4px.
+Tự luyện: Elip x²/25+y²/9=1 có tiêu cự 2c bằng bao nhiêu?
+Đáp án: c=√(25−9)=4 ⇒ 2c=8.
+
+Mặt phẳng trong không gian
+ax+by+cz+d=0,  d(M,P)=|ax₀+by₀+cz₀+d|/√(a²+b²+c²)
+Điều kiện: (a,b,c)≠(0,0,0); M(x₀,y₀,z₀).
+Lý thuyết: Vector pháp tuyến n=(a,b,c) vuông góc mọi hướng nằm trong mặt phẳng.
+Chứng minh: Viết n·(X−X₀)=0; khoảng cách là độ dài hình chiếu lên pháp tuyến đơn vị.
+Ví dụ: P:x+2y+2z−9=0 ⇒ d(O,P)=3.
+Lỗi thường gặp: Mẫu là độ dài pháp tuyến, không phải tổng tọa độ.
+Tự luyện: Tính khoảng cách từ O đến 2x+y+2z−6=0.
+Đáp án: d=6/√(4+1+4)=2.
+
+Thể tích lăng trụ và hình chóp
+V_(lăng trụ)=Bh,  V_(chóp)=Bh/3
+Điều kiện: B là diện tích đáy, h là chiều cao vuông góc mặt phẳng đáy.
+Lý thuyết: Lăng trụ xiên vẫn dùng chiều cao vuông góc. Chóp bằng một phần ba lăng trụ cùng đáy và chiều cao.
+Chứng minh: Cắt lớp song song đáy: diện tích tiết diện chóp tỉ lệ bình phương khoảng cách đến đỉnh; tích phân cho hệ số 1/3.
+Ví dụ: Chóp B=18,h=5 ⇒ V=30.
+Lỗi thường gặp: Không dùng độ dài cạnh bên thay h nếu cạnh bên không vuông góc đáy.
+Tự luyện: Chóp có B=24 và h=6. Tính thể tích.
+Đáp án: V=24×6/3=48.
+
+HÌNH HỌC ĐẠI HỌC
+
+Tích có hướng và diện tích
+u×v=(u₂v₃−u₃v₂,u₃v₁−u₁v₃,u₁v₂−u₂v₁),  S=‖u×v‖/2
+Điều kiện: u,v là hai vector cạnh cùng gốc của một tam giác trong ℝ³, hệ trực chuẩn thuận.
+Lý thuyết: Tích có hướng vuông góc hai vector; độ dài bằng diện tích hình bình hành do chúng sinh ra.
+Chứng minh: ‖u×v‖²=‖u‖²‖v‖²−(u·v)² ⇒ ‖u×v‖=‖u‖‖v‖sin θ.
+Ví dụ: u=(3,0,0),v=(0,4,0) ⇒ u×v=(0,0,12), S=6.
+Lỗi thường gặp: Đổi thứ tự làm đổi dấu: v×u=−u×v.
+Tự luyện: Hai cạnh tam giác là (2,0,0) và (0,5,0). Tính diện tích.
+Đáp án: S=‖(0,0,10)‖/2=5.
+
+Tích hỗn tạp và thể tích
+V_(hộp)=|u·(v×w)|,  V_(tứ diện)=|u·(v×w)|/6
+Điều kiện: u,v,w cùng gốc trong ℝ³; tứ diện có ba cạnh này tại một đỉnh.
+Lý thuyết: Tích hỗn tạp là thể tích có dấu; bằng 0 khi ba vector đồng phẳng.
+Chứng minh: Diện tích đáy ‖v×w‖ nhân chiều cao |u·n̂| cho hình hộp; tứ diện chiếm 1/6.
+Ví dụ: u=(2,0,0),v=(0,3,0),w=(0,0,4) ⇒ thể tích hộp 24, tứ diện 4.
+Lỗi thường gặp: Thể tích hình học luôn không âm; nhớ hệ số 1/6 cho tứ diện.
+Tự luyện: Tứ diện có ba cạnh tại một đỉnh (3,0,0),(0,4,0),(0,0,2). Tính V.
+Đáp án: |3×4×2|/6=4.
+
+Phép chiếu trực giao
+proj_v u=((u·v)/(v·v))v
+Điều kiện: u,v trong không gian Euclid, v≠0.
+Lý thuyết: Tách u thành một thành phần song song v và một thành phần vuông góc v.
+Chứng minh: Đặt hình chiếu bằng tv; điều kiện (u−tv)·v=0 cho t=(u·v)/(v·v).
+Ví dụ: Chiếu (3,4) lên (1,0) được (3,0).
+Lỗi thường gặp: Hệ số chiếu có thể âm; hình chiếu là vector.
+Tự luyện: Chiếu (6,8) lên trục Ox. Độ dài hình chiếu bằng bao nhiêu?
+Đáp án: Hình chiếu (6,0), độ dài 6.
+
+Khoảng cách đến đường thẳng trong ℝ³
+d(M,ℓ)=‖(M−A)×v‖/‖v‖
+Điều kiện: ℓ:A+tv, t∈ℝ, v≠0.
+Lý thuyết: Khoảng cách là chiều cao hình bình hành dựng trên vector chỉ phương và vector nối tới điểm.
+Chứng minh: Diện tích hình bình hành bằng ‖v‖d và cũng bằng ‖(M−A)×v‖.
+Ví dụ: Trục Oz: A=O,v=(0,0,1); M(3,4,2) cách trục 5.
+Lỗi thường gặp: Công thức cho khoảng cách đến cả đường thẳng, không phải đoạn thẳng hữu hạn.
+Tự luyện: M(6,8,7) cách trục Oz bao nhiêu?
+Đáp án: Khoảng cách √(6²+8²)=10.
+
+Phép biến đổi affine và định thức
+x′=Ax+b,  S′=|det A|S
+Điều kiện: A là ma trận 2×2 khả nghịch cho phép affine phẳng; b là vector tịnh tiến.
+Lý thuyết: Affine bảo toàn thẳng hàng và song song. Tịnh tiến không đổi diện tích; phần tuyến tính nhân diện tích với |det A|.
+Chứng minh: Ảnh của hình vuông đơn vị là hình bình hành có diện tích |det A|; mở rộng bằng chia nhỏ và cộng diện tích.
+Ví dụ: A=diag(2,3) ⇒ mọi diện tích tăng 6 lần.
+Lỗi thường gặp: Phép affine nói chung không bảo toàn góc hay độ dài.
+Tự luyện: A=diag(3,4), hình ban đầu diện tích 2. Tính diện tích ảnh.
+Đáp án: |det A|=12 ⇒ S′=12×2=24.
+
+Phép quay phẳng và ma trận trực giao
+x′=x cos θ−y sin θ,  y′=x sin θ+y cos θ
+Điều kiện: Quay chủ động ngược chiều kim đồng hồ quanh gốc O trong hệ trục thuận.
+Lý thuyết: Ma trận quay thỏa AᵀA=I và det A=1 nên bảo toàn độ dài, góc và định hướng.
+Chứng minh: Viết điểm theo tọa độ cực rồi dùng công thức cộng góc.
+Ví dụ: Quay (1,0) góc 90° được (0,1).
+Lỗi thường gặp: Phân biệt quay vector với quay hệ tọa độ, hai phép dùng dấu góc ngược nhau.
+Tự luyện: Quay (2,0) góc 90° ngược chiều kim đồng hồ. Tung độ ảnh?
+Đáp án: Ảnh là (0,2).
+
+Độ dài đường cong tham số
+L=∫_a^b▒‖r′(t)‖ dt
+Điều kiện: r:[a,b]→ℝ² hoặc ℝ³ khả vi liên tục; tính chiều dài theo tham số, có tính số lần đi qua.
+Lý thuyết: Tốc độ ‖r′(t)‖ tích lũy thành độ dài.
+Chứng minh: Xấp xỉ đường cong bằng các đoạn dây cung, dùng r(t+Δt)−r(t)≈r′(t)Δt rồi lấy giới hạn tổng Riemann.
+Ví dụ: r(t)=(3t,4t), 0≤t≤2 ⇒ L=∫₀²5dt=10.
+Lỗi thường gặp: Không tích phân vector r′ rồi lấy chuẩn: đó chỉ là độ dời.
+Tự luyện: r(t)=(3t,4t), 0≤t≤3. Tính L.
+Đáp án: ‖r′‖=5 ⇒ L=5×3=15.
+
+Độ cong của đường cong
+κ=‖r′×r″‖/‖r′‖³
+Điều kiện: r(t)∈ℝ³ khả vi hai lần, r′(t)≠0; đường phẳng xem như có z=0.
+Lý thuyết: Độ cong đo tốc độ đổi hướng của tiếp tuyến đơn vị theo độ dài cung. Đường tròn bán kính R có κ=1/R.
+Chứng minh: Từ T=r′/‖r′‖ và κ=‖dT/ds‖, dùng ds/dt=‖r′‖ để suy ra công thức.
+Ví dụ: Đường thẳng κ=0; đường tròn R=5 có κ=0.2.
+Lỗi thường gặp: Không áp dụng tại điểm tham số có r′=0 nếu chưa đổi tham số hoặc xét giới hạn.
+Tự luyện: Đường tròn bán kính 4 có độ cong κ. Tính 100κ.
+Đáp án: κ=1/4 ⇒ 100κ=25.
+
+Mặt mức và mặt phẳng tiếp tuyến
+∇F(P)·(X−P)=0
+Điều kiện: Mặt F(x,y,z)=0; F khả vi liên tục gần P, F(P)=0 và ∇F(P)≠0.
+Lý thuyết: Gradient là pháp tuyến của mặt mức tại điểm chính quy.
+Chứng minh: Với đường cong r(t) nằm trên mặt, F(r(t))=0 ⇒ ∇F·r′=0 theo quy tắc dây chuyền.
+Ví dụ: Mặt cầu x²+y²+z²=9 tại P(3,0,0) có tiếp diện x=3.
+Lỗi thường gặp: Gradient bằng 0 không xác định được mặt phẳng tiếp tuyến bằng công thức này.
+Tự luyện: Tiếp diện mặt cầu x²+y²+z²=16 tại (4,0,0) là x=k. Tìm k.
+Đáp án: ∇F=(8,0,0) ⇒ 8(x−4)=0 ⇒ x=4.
+
+Diện tích mặt tham số
+S=∬_D▒‖r_u×r_v‖ du dv
+Điều kiện: r(u,v) khả vi liên tục, chính quy (r_u×r_v≠0); tham số hóa một lần, trừ các biên hoặc tập diện tích 0.
+Lý thuyết: Tích có hướng hai vector tiếp xúc cho hệ số đổi diện tích từ miền tham số lên mặt.
+Chứng minh: Một ô ΔuΔv biến thành hình bình hành xấp xỉ có diện tích ‖r_u×r_v‖ΔuΔv; lấy giới hạn.
+Ví dụ: r(u,v)=(u,v,0), D=[0,2]×[0,3] ⇒ S=6.
+Lỗi thường gặp: Tham số hóa chồng nhiều lần sẽ đếm diện tích nhiều lần.
+Tự luyện: r(u,v)=(u,v,0), 0≤u≤4, 0≤v≤5. Tính S.
+Đáp án: ‖r_u×r_v‖=1 ⇒ S=4×5=20.
+
+Tài liệu đối chiếu:
+UnicodeMath: https://www.unicode.org/notes/tn28/
+Độ dài và độ cong: https://openstax.org/books/calculus-volume-3/pages/3-3-arc-length-and-curvature
+Diện tích mặt: https://openstax.org/books/calculus-volume-3/pages/6-6-surface-integrals

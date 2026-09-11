@@ -1,3 +1,13 @@
+# Cập nhật hiện tại — 11/09/2026
+
+- 73 bài học trong 10 chuyên đề; thêm 30 bài hình học THCS, THPT và đại học cơ bản.
+- Công thức sổ tay có UnicodeMath và nút sao chép; có bản .txt tải về.
+- AI Tutor hỗ trợ Gemini và OpenAI; máy chủ hiện chọn Gemini 3.5 Flash. Khóa được lưu dưới dạng Secret.
+- Mục Tài liệu & Drive mở thư mục Google Drive được chỉ định. Tải tệp thực hiện trong Google Drive; chưa có quyền OAuth để tự động ghi tệp từ website.
+- Phần bên dưới là hồ sơ thiết kế ban đầu; số lượng học liệu và trạng thái AI trong hồ sơ cũ được thay thế bởi cập nhật này.
+
+---
+
 # MATH HANDBOOK PRO
 ## Tài liệu thiết kế sản phẩm và triển khai
 

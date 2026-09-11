@@ -1,3 +1,5 @@
+import {geometryTopics,geometryFormulas} from './geometry-content';
+import {unicodeFormulas} from './unicode-math';
 export type Topic={id:string;name:string;description:string;symbol:string;color:string;level:string};
 export const topics:Topic[]=[
 {id:'algebra',name:'Đại số cơ bản',description:'Hằng đẳng thức, đa thức và phương trình',symbol:'(a + b)²',color:'blue',level:'THCS'},
@@ -6,8 +8,8 @@ export const topics:Topic[]=[
 {id:'sequences',name:'Cấp số',description:'Quy luật, số hạng và tổng',symbol:'1, 2, 4, 8…',color:'green',level:'THPT'},
 {id:'logarithms',name:'Logarit',description:'Cơ số, phép biến đổi và hàm ngược',symbol:'logₐ b',color:'blue',level:'THPT'},
 {id:'complex',name:'Số phức & Euler',description:'Từ mặt phẳng phức đến đường tròn',symbol:'eⁱᶿ = cos θ + i sin θ',color:'purple',level:'THPT'},
-{id:'calculus',name:'Giải tích',description:'Giới hạn, đạo hàm và tích phân',symbol:'∫ f(x) dx',color:'green',level:'Đại học cơ bản'}];
-export type Formula={id:string;topic:string;name:string;latex:string;condition:string;theory:string;proof:string;example:string;tip:string;mistake:string;question:string;answer:number;solution:string;equality?:string;advanced?:string};
+{id:'calculus',name:'Giải tích',description:'Giới hạn, đạo hàm và tích phân',symbol:'∫ f(x) dx',color:'green',level:'Đại học cơ bản'},...geometryTopics];
+export type Formula={id:string;topic:string;name:string;latex:string;unicodeMath?:string;diagram?:'right-triangle'|'triangle-height'|'circle'|'solid'|'vectors'|'curve';condition:string;theory:string;proof:string;example:string;tip:string;mistake:string;question:string;answer:number;solution:string;equality?:string;advanced?:string};
 let serial=0;
 function f(topic:string,name:string,latex:string,condition:string,theory:string,proof:string,example:string,mistake:string,question:string,answer:number,solution:string,extra:Partial<Formula>={}):Formula{return {id:`f${++serial}`,topic,name,latex,condition,theory,proof,example,mistake,question,answer,solution,tip:'Xác định điều kiện trước, nhận dạng công thức, rồi thay số và kiểm tra lại.',...extra}}
 const r=String.raw;
@@ -56,5 +58,7 @@ f('calculus','Đạo hàm tích, thương, hàm hợp',r`(uv)'=u'v+uv',\quad (f\
 f('calculus','Nguyên hàm',r`\int x^n\,dx=\frac{x^{n+1}}{n+1}+C`,'n≠−1; với n thực, xét x>0. Riêng ∫1/x dx=ln|x|+C trên khoảng không chứa 0.','Nguyên hàm F của f thỏa F′=f; các nguyên hàm sai khác hằng số trên một khoảng.','Lấy đạo hàm xⁿ⁺¹/(n+1)+C thu được xⁿ.','∫2x dx=x²+C.','Phải thêm hằng số C cho tích phân bất định.','Với F(x)=x² và F′=2x, tính F(3).',9,'F(3)=3²=9.'),
 f('calculus','Tích phân xác định',r`\int_a^b f(x)\,dx=F(b)-F(a)`,'f liên tục trên [a,b] và F′=f.','Tích phân là diện tích có dấu, liên hệ với nguyên hàm bởi định lý cơ bản.','Hàm G(x)=∫ₐˣf(t)dt có G′=f, nên F−G hằng; thế hai đầu mút.','∫₀²x dx=[x²/2]₀²=2.','Diện tích hình học cần tách dấu hoặc tích phân |f|.','Tính ∫₀² 3x² dx.',8,'[x³]₀²=8.'),
 ];
+for(const formula of formulas) formula.unicodeMath=unicodeFormulas[formula.id];
+formulas.push(...geometryFormulas);
 export const normalize=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').toLowerCase();
 export function findFormulas(q:string,topic='all'){const tokens=normalize(q).replace(/công thức|cong thuc/g,'').split(/\s+/).filter(Boolean);return formulas.filter(f=>(topic==='all'||f.topic===topic)&&tokens.every(t=>normalize(f.name+' '+f.theory+' '+f.latex+' '+topics.find(x=>x.id===f.topic)?.name).includes(t)))}
