@@ -1,11 +1,12 @@
 import type {Formula,Topic} from './content';
+import {geometryLatex} from './geometry-latex';
 export const geometryTopics:Topic[] = [
  {id:'geometry-middle',name:'Hình học THCS',description:'Góc, tam giác, đồng dạng, đường tròn và các hình khối',symbol:'a² + b² = c²',color:'blue',level:'THCS'},
  {id:'geometry-high',name:'Hình học THPT',description:'Lượng giác, tọa độ, vector và hình học không gian',symbol:'u · v = |u||v| cos θ',color:'purple',level:'THPT'},
  {id:'geometry-university',name:'Hình học đại học',description:'Hình học giải tích, phép biến đổi và nhập môn đường cong, mặt',symbol:'κ = |r′ × r″| / |r′|³',color:'green',level:'Đại học cơ bản'},
 ];
 function g(id:string,level:'middle'|'high'|'university',name:string,unicodeMath:string,condition:string,theory:string,proof:string,example:string,mistake:string,question:string,answer:number,solution:string,diagram?:Formula['diagram']):Formula {
- return {id:'geo-'+id,topic:'geometry-'+level,name,unicodeMath,latex:'',condition,theory,proof,example,mistake,question,answer,solution,diagram,tip:'Vẽ hình, ghi giả thiết, thống nhất đơn vị rồi chọn công thức phù hợp.'};
+ return {id:'geo-'+id,topic:'geometry-'+level,name,unicodeMath,latex:geometryLatex[id],condition,theory,proof,example,mistake,question,answer,solution,diagram,tip:'Vẽ hình, ghi giả thiết, thống nhất đơn vị rồi chọn công thức phù hợp.'};
 }
 export const geometryFormulas:Formula[] = [
  g('angles','middle','Góc và tổng góc tam giác','A+B+C=180°','A, B, C là ba góc trong một tam giác phẳng Euclid.','Ba góc trong tạo thành một góc bẹt. Góc ngoài bằng tổng hai góc trong không kề.','Qua một đỉnh kẻ đường thẳng song song cạnh đối diện, dùng góc so le trong.','A=50°, B=60° ⇒ C=70°.','Không cộng thêm góc ngoài vào tổng ba góc trong.','Tam giác có hai góc 40° và 65°. Góc còn lại bao nhiêu độ?',75,'180−40−65=75°.'),

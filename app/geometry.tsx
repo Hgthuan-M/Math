@@ -4,7 +4,7 @@ import {ArrowRight,Copy,Check} from 'lucide-react';
 import {geometryTopics,geometryFormulas} from '@/lib/geometry-content';
 import type {Formula} from '@/lib/content';
 import {Tabs,TabsList,TabsTrigger,TabsContent} from '@/components/ui/tabs';
-import {MathFormula} from './math';
+import {MathFormula,FormulaLegend} from './math';
 
 export function CopyFormula({text}:{text:string}) {
  const [state,setState]=useState('');
@@ -14,7 +14,7 @@ export function CopyFormula({text}:{text:string}) {
 export function Geometry({openLesson,onQuiz}:{openLesson:(id:string)=>void;onQuiz:(topic:string)=>void}) {
  return <><div className="page-heading"><p className="eyebrow">TỪ HÌNH VẼ ĐẾN LẬP LUẬN</p><h1>Hình học</h1><p>30 bài nền tảng từ THCS, THPT đến đại học cơ bản. Học qua giả thiết, công thức, ví dụ và bài tự luyện.</p></div>
  <Tabs defaultValue="geometry-middle"><TabsList aria-label="Cấp học hình học" className="geometry-levels">{geometryTopics.map(t=><TabsTrigger key={t.id} value={t.id}>{t.level}</TabsTrigger>)}</TabsList>
- {geometryTopics.map(t=><TabsContent key={t.id} value={t.id}><section className="panel geometry-intro"><div><span className={'tag '+t.color}>{t.level}</span><h2>{t.name}</h2><p>{t.description}</p></div><button className="primary-btn" onClick={()=>onQuiz(t.id)}>Luyện tập nhóm này <ArrowRight size={17}/></button></section><div className="formula-grid">{geometryFormulas.filter(f=>f.topic===t.id).map((f,i)=><article key={f.id} className="panel formula-card"><span className="eyebrow">BÀI {i+1} · {t.level}</span><button className="formula-open" onClick={()=>openLesson(f.id)}><h3>{f.name}</h3><MathFormula latex={f.latex} unicodeMath={f.unicodeMath}/><p>{f.theory}</p><span className="text-btn">Mở bài học <ArrowRight size={16}/></span></button></article>)}</div></TabsContent>)}
+ {geometryTopics.map(t=><TabsContent key={t.id} value={t.id}><section className="panel geometry-intro"><div><span className={'tag '+t.color}>{t.level}</span><h2>{t.name}</h2><p>{t.description}</p></div><button className="primary-btn" onClick={()=>onQuiz(t.id)}>Luyện tập nhóm này <ArrowRight size={17}/></button></section><div className="formula-grid">{geometryFormulas.filter(f=>f.topic===t.id).map((f,i)=><article key={f.id} className="panel formula-card"><span className="eyebrow">BÀI {i+1} · {t.level}</span><button className="formula-open" onClick={()=>openLesson(f.id)}><h3>{f.name}</h3><MathFormula latex={f.latex} unicodeMath={f.unicodeMath}/><FormulaLegend id={f.id}/><p>{f.theory}</p><span className="text-btn">Mở bài học <ArrowRight size={16}/></span></button></article>)}</div></TabsContent>)}
  </Tabs><p className="small geometry-note">Phạm vi đại học gồm hình học giải tích, đại số tuyến tính ứng dụng và nhập môn hình học vi phân; chưa bao quát toàn bộ các học phần hình học chuyên sâu.</p></>;
 }
 
