@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "npx next build",
+  "env": {
+    "AI_PROVIDER": "gemini",
+    "GEMINI_MODEL": "gemini-3.6-flash"
+  }
+}
