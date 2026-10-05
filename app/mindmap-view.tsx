@@ -17,6 +17,7 @@ import {
   Binary,
   Scale,
   Calculator,
+  Waves,
 } from 'lucide-react';
 import {topics, formulas} from '@/lib/content';
 import {MathFormula, MathText} from './math';
@@ -115,8 +116,9 @@ const PREREQUISITE_TRACKS: PrerequisiteTrack[] = [
           'Công thức hạ bậc và biến đổi tích thành tổng',
         ],
         recommendedFormulaIds: [
-          {id: 'f13', title: 'Khái niệm Hàm số'},
-          {id: 'geo-right-trig', title: 'Tỉ số lượng giác cơ bản'},
+          {id: 'trig-basic', title: 'Hệ thức lượng giác cơ bản'},
+          {id: 'trig-addition', title: 'Công thức cộng lượng giác'},
+          {id: 'trig-power-reduction', title: 'Công thức hạ bậc'},
         ],
       },
       {
@@ -167,6 +169,74 @@ const PREREQUISITE_TRACKS: PrerequisiteTrack[] = [
         recommendedFormulaIds: [
           {id: 'f42', title: 'Nguyên hàm cơ bản'},
           {id: 'f43', title: 'Tích phân xác định & Newton-Leibniz'},
+        ],
+      },
+    ],
+  },
+  {
+    id: 'trigonometry-waves',
+    icon: Waves,
+    title: 'Lượng giác & Sóng tuần hoàn',
+    badge: 'DAO ĐỘNG & VẬT LÝ',
+    goal: 'Mô hình hóa chuyển động tròn, sóng âm thanh, dòng điện xoay chiều i(t) = I_0 cos(ωt + φ), xử lý tín hiệu Fourier và tích phân.',
+    coreQuestion: 'Muốn học Lượng giác nâng cao thì nên vững nền tảng nào trước?',
+    flowchain: [
+      '1. Tỉ số tam giác vuông',
+      '2. Đường tròn lượng giác & Radian',
+      '3. Công thức cộng & nhân đôi',
+      '4. Biến đổi tổng ↔ tích & hạ bậc',
+      '🎯 ĐÍCH ĐẾN: PHƯƠNG TRÌNH & ĐẠO HÀM LƯỢNG GIÁC',
+    ],
+    whySequenceMatters:
+      'Lượng giác mở rộng từ tam giác vuông (góc nhọn < 90°) lên đường tròn đơn vị (góc thực tùy ý âm/dương). Từ các hệ thức cơ bản sin²x + cos²x = 1, phát triển thành công thức cộng cos(a-b), từ đó suy ra mọi công thức nhân đôi, hạ bậc, biến đổi tích ↔ tổng và phương trình lượng giác.',
+    stuckTrapIfSkipped:
+      'Nếu không hiểu đường tròn lượng giác mà chỉ học vẹt công thức, bạn sẽ nhầm dấu khi đổi góc bù, phụ, hơn kém π, không giải được phương trình lượng giác vì sót họ nghiệm (+ k2π hay + kπ), và hoàn toàn bế tắc khi lấy đạo hàm, tích phân.',
+    steps: [
+      {
+        level: 1,
+        grade: 'Nền tảng 1 · Lớp 9',
+        name: 'Tỉ số lượng giác góc nhọn trong tam giác vuông',
+        formulaLatex: '\\sin = \\frac{\\text{đối}}{\\text{huyền}},\\quad \\cos = \\frac{\\text{kề}}{\\text{huyền}},\\quad \\tan = \\frac{\\text{đối}}{\\text{kề}}',
+        whyNeeded: 'Hiểu xuất phát điểm hình học trực quan của sin, cos, tan trước khi khái quát hóa lên góc tùy ý.',
+        keyConcepts: ['Tỉ số lượng giác góc nhọn', 'Bảng góc đặc biệt 30°, 45°, 60°', 'Định lý Pythagoras kết hợp sin² + cos² = 1'],
+        recommendedFormulaIds: [
+          {id: 'geo-right-trig', title: 'Tỉ số lượng giác tam giác vuông'},
+          {id: 'geo-pythagoras', title: 'Định lý Pythagoras'},
+        ],
+      },
+      {
+        level: 2,
+        grade: 'Nền tảng 2 · Lớp 10',
+        name: 'Đường tròn lượng giác & Đơn vị Radian',
+        formulaLatex: 'x^2 + y^2 = 1,\\quad 180^\\circ = \\pi\\text{ rad},\\quad \\sin^2 x + \\cos^2 x = 1',
+        whyNeeded: 'Đưa lượng giác từ độ sang radian và mở rộng góc quay không giới hạn (-∞ đến +∞).',
+        keyConcepts: ['Trục sin đứng, trục cos nằm', 'Dấu của các hàm số trong 4 góc phần tư', 'Cung liên kết: cos đối, sin bù, phụ chéo, tan hơn kém pi'],
+        recommendedFormulaIds: [{id: 'trig-basic', title: 'Hệ thức lượng giác cơ bản & Góc đặc biệt'}],
+      },
+      {
+        level: 3,
+        grade: 'Nền tảng 3 · Lớp 11',
+        name: 'Bộ công thức biến đổi (Cộng, Nhân, Hạ bậc)',
+        formulaLatex: '\\cos(a \\pm b) = \\cos a \\cos b \\mp \\sin a \\sin b,\\quad \\sin 2x = 2\\sin x\\cos x',
+        whyNeeded: 'Trọng tâm biến đổi đại số lượng giác, hạ bậc và thu gọn các biểu thức dao động phức tạp.',
+        keyConcepts: ['Công thức cộng', 'Công thức nhân đôi & nhân ba', 'Hạ bậc chẵn để tính tích phân', 'Biến đổi tích thành tổng và tổng thành tích'],
+        recommendedFormulaIds: [
+          {id: 'trig-addition', title: 'Công thức cộng lượng giác'},
+          {id: 'trig-double-triple', title: 'Công thức nhân đôi & nhân ba'},
+          {id: 'trig-power-reduction', title: 'Công thức hạ bậc'},
+          {id: 'trig-product-to-sum', title: 'Biến đổi tích ↔ tổng'},
+        ],
+      },
+      {
+        level: 4,
+        grade: 'Mục tiêu đích đến · Lớp 11 - 12 & Vật lý Đại học',
+        name: 'Phương trình, Đạo hàm & Dao động điều hòa',
+        formulaLatex: '\\sin u = \\sin v \\iff u = v + k2\\pi \\lor u = \\pi - v + k2\\pi,\\quad (\\sin x)\' = \\cos x',
+        whyNeeded: 'Giải phương trình sóng, dòng điện xoay chiều, dao động con lắc lò xo và tính toán giải tích lượng giác.',
+        keyConcepts: ['Phương trình lượng giác cơ bản', 'Phương trình bậc hai theo sin/cos', 'Đạo hàm & nguyên hàm lượng giác', 'Dao động điều hòa x = A cos(ωt + φ)'],
+        recommendedFormulaIds: [
+          {id: 'trig-equations', title: 'Phương trình lượng giác cơ bản'},
+          {id: 'trig-derivatives', title: 'Đạo hàm & Nguyên hàm lượng giác'},
         ],
       },
     ],

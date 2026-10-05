@@ -1,12 +1,14 @@
 import {geometryTopics,geometryFormulas} from './geometry-content';
 import {matrixTopics,matrixFormulas} from './matrix-content';
 import {modernMathTopics,modernMathFormulas} from './modern-math-content';
+import {trigonometryTopics,trigonometryFormulas} from './trigonometry-content';
 import {unicodeFormulas} from './unicode-math';
 export type Topic={id:string;name:string;description:string;symbol:string;color:string;level:string};
 export const topics:Topic[]=[
 {id:'algebra',name:'Đại số cơ bản',description:'Hằng đẳng thức, đa thức và phương trình',symbol:'(a + b)²',color:'blue',level:'THCS'},
 {id:'powers',name:'Lũy thừa & căn thức',description:'Quy tắc lũy thừa, căn và biến đổi',symbol:'ⁿ√x',color:'purple',level:'THCS'},
 {id:'inequalities',name:'Bất đẳng thức',description:'Từ AM–GM đến tư duy Olympic',symbol:'a + b ≥ 2√ab',color:'orange',level:'THPT'},
+...trigonometryTopics,
 {id:'sequences',name:'Cấp số',description:'Quy luật, số hạng và tổng',symbol:'1, 2, 4, 8…',color:'green',level:'THPT'},
 {id:'logarithms',name:'Logarit',description:'Cơ số, phép biến đổi và hàm ngược',symbol:'logₐ b',color:'blue',level:'THPT'},
 {id:'complex',name:'Số phức & Euler',description:'Từ mặt phẳng phức đến đường tròn',symbol:'eⁱᶿ = cos θ + i sin θ',color:'purple',level:'THPT'},
@@ -64,6 +66,6 @@ f('calculus','Nguyên hàm',r`\int x^n\,dx=\frac{x^{n+1}}{n+1}+C`,'n≠−1; v�
 f('calculus','Tích phân xác định',r`\int_a^b f(x)\,dx=F(b)-F(a)`,'f liên tục trên [a,b] và F′=f.','Tích phân là diện tích có dấu, liên hệ với nguyên hàm bởi định lý cơ bản.','Hàm G(x)=∫ₐˣf(t)dt có G′=f, nên F−G hằng; thế hai đầu mút.','Tính tích phân xác định: I = ∫₀² x dx.','• Bước 1: Tìm một nguyên hàm của hàm dưới dấu tích phân f(x) = x:\n  F(x) = x² / 2.\n• Bước 2: Áp dụng định lý cơ bản của giải tích (công thức Newton–Leibniz):\n  I = [x² / 2]₀² = F(2) − F(0)\n• Bước 3: Thay hai cận:\n  I = (2² / 2) − (0² / 2) = (4 / 2) − 0 = 2.\n• Kết luận: Giá trị của tích phân là 2.','Diện tích hình học cần tách dấu hoặc tích phân |f|.','Tính ∫₀² 3x² dx.',8,'[x³]₀²=8.'),
 ];
 for(const formula of formulas) formula.unicodeMath=unicodeFormulas[formula.id];
-formulas.push(...matrixFormulas, ...modernMathFormulas, ...geometryFormulas);
+formulas.push(...trigonometryFormulas, ...matrixFormulas, ...modernMathFormulas, ...geometryFormulas);
 export const normalize=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').toLowerCase();
 export function findFormulas(q:string,topic='all'){const tokens=normalize(q).replace(/công thức|cong thuc/g,'').split(/\s+/).filter(Boolean);return formulas.filter(f=>(topic==='all'||f.topic===topic)&&tokens.every(t=>normalize(f.name+' '+f.theory+' '+f.latex+' '+topics.find(x=>x.id===f.topic)?.name).includes(t)))}
